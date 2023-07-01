@@ -1,5 +1,5 @@
 .venv
 **/*.pyc
 
-contrib
+contrib/*
 !contrib/Makefile
