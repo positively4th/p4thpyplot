@@ -5,7 +5,8 @@ all = p4thpymisc
 all: $(all)
 
 p4thpymisc: 
-	(git clone git@github.com:positively4th/p4thpymisc.git || echo) \
+	(git clone https://github.com/positively4th/p4thpymisc.git || echo) \
+	&& (cd p4thpymisc && git pull) \
 	&& ([ -f "p4thpymisc/Makefile" ] && make -C p4thpymisc || echo)
 
 clean: 
